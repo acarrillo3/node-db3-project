@@ -24,7 +24,7 @@ WHERE od.orderid = 10251;
 
 -- Display the OrderID, Customer's Company Name and the employee's LastName for every order. All columns should be labeled clearly. Displays 16,789 records.
 
-SELECT o.id as "Oreder Id", c.CompanyName as "Company Name", e.LastName as "Employee Last Name"
+SELECT o.id as "Order Id", c.CompanyName as "Company Name", e.LastName as "Employee Last Name"
 FROM [order] as O
 JOIN customer as c on o.CustomerId = c.Id 
 JOIN employee as e on o.EmployeeId = e.id;
